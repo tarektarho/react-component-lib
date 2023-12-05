@@ -4,7 +4,7 @@
     "registry": "https://npm.pkg.github.com/tarektarho"
   },
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "cypress:open": "cypress open",
