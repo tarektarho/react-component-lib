@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext", //Generate modern JS modules for our library
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node", //Updated "node" -- Follow node.js rules for finding modules google moduleResoltuion algo
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",// to fix error when export the lib "react"  Transform JSX into React code
+
+    "declaration": true, // Added  true -- Output a .d.ts file for our library types
+    "declarationDir": "types",// Added "types" -- Where to place the .d.ts files
+
+    "sourceMap": true, // Added true -- Mapping JS code back to its TS file origins for debugging
+    "outDir": "dist",// Added  Directory where the project will be generated
+    "allowSyntheticDefaultImports": true,// Added true -- Assumes default exports if none are created manually
+    "emitDeclarationOnly": true,// Added Don't generate JS (rollup will do that) only export type declarations
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
