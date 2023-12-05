@@ -4,9 +4,10 @@
     "registry": "https://npm.pkg.github.com/tarektarho"
   },
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
+    "cypress:open": "cypress open",
     "rollup": "rollup -c",
     "dev": "vite",
     "build": "tsc && vite build",
@@ -26,14 +27,15 @@
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "cypress": "^13.6.1",
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "rollup": "^4.6.1",
     "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0"
+    "vite": "^4.0.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
