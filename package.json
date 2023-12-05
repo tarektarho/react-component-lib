@@ -1,6 +1,9 @@
 {
-  "name": "react-component-lib",
-  "private": true,
+  "name": "@tarektarho/react-component-lib",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/tarektarho"
+  },
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
